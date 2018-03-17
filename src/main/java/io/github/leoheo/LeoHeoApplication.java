@@ -19,7 +19,8 @@ public class LeoHeoApplication extends WebSecurityConfigurerAdapter {
   protected void configure(HttpSecurity http) throws Exception {
     http
         .authorizeRequests()
-          .mvcMatchers("/").permitAll()
+          .mvcMatchers("/").permitAll()               // 로그인하지 않아도 허용하는 URL
+          .mvcMatchers("/admin/**").hasRole("ADMIN")  // 해당 ROLE만 접근가능
         .anyRequest().authenticated();
   }
 }
