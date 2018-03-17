@@ -12,11 +12,6 @@ public class PostController {
     return "test";
   }
 
-  @GetMapping("/oauth/token")
-  public Principal test(Principal principal) {
-    return principal;
-  }
-
   @GetMapping("/admin")
   public String test3() {
     return "test3";
@@ -24,6 +19,11 @@ public class PostController {
 
   @GetMapping("/admin/test")
   public Principal test4(Principal principal) {
+    return principal;
+  }
+
+  @GetMapping("/test")
+  public Principal test5(Principal principal) {
     return principal;
   }
 }
