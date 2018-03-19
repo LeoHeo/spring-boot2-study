@@ -1,16 +1,17 @@
 package io.github.leoheo.post;
 
 import java.security.Principal;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class PostController {
 
-  @GetMapping("/")
-  public String greet() {
-    return "test";
-  }
+//  @GetMapping("/")
+//  public String greet() {
+//    return "test2";
+//  }
 
   @GetMapping("/admin")
   public String test3() {
@@ -26,4 +27,10 @@ public class PostController {
   public Principal test5(Principal principal) {
     return principal;
   }
+
+  @GetMapping("/test2")
+  public String test6() {
+    return "test";
+  }
+
 }

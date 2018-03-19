@@ -9,3 +9,7 @@ spring:
           facebook:
             client-id: 805478719657122
             client-secret: 9c20ab2c5baa26bad952f7cdf05607c6
+server:
+  tomcat:
+    accesslog:
+      enabled: true
