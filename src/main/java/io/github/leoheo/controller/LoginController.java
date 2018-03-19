@@ -1,4 +1,4 @@
-package io.github.leoheo.post;
+package io.github.leoheo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
